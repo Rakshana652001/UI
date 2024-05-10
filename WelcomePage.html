@@ -2,29 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./WelcomePage.css">
     <title>Document</title>
     <style>
-        h4{align-content: center};
+        body{
+            margin: 0;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(246, 248, 250);
+            width: 1220px;
+            height: 700px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+        }
+        
+        .buttonRegister{
+            position: relative;
+            border-radius: 12px;
+            border: 2px solid #04AA6D;
+            padding: 10px 25px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .buttonRegister:hover{
+            background-color: #a18d8d;
+            color: rgb(239, 227, 227);
+        }
+
+        .buttonLogin{
+            position: relative;
+            border-radius: 12px;
+            border: 2px solid #04AA6D;
+            padding: 10px 25px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .buttonLogin:hover{
+            background-color: #a18d8d;
+            color: rgb(239, 227, 227);
+        }
+
+
+
     </style>
 </head>
 <body>
-    <form action=" ">
-        <fieldset>
-            <legend><h2><figcaption>Leave Management System</figcaption></h2></legend>
-            <figure>
-                <table border="1">
-                    <tr>
-                        <td>
-                            <h3><a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Register.html">Register</a></h3>
-                            <h3><a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Login.html">Login</a></h3>
-                        </td>
-                    </tr>
-                </table>
-                    
-            </figure>
-        </fieldset>
-    </form>
+    <div class="navbar">
+        <a class="active" href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/WelcomePage.html">Home</a>
+        <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Login.html">Login</a>
+        <a href=" ">Products</a>
+        <a href="">About Us</a>
+        <!-- <input type="text" name="searchbox" id="searchbox" placeholder="search"> -->
+        <input class="searchbox" type="text" name="searchbox" id="searchbox" placeholder="Search">
+    </div>
+    
+    <div class="heading">
+            <h1>
+                Leave Management System
+                <div >
+                    <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Register.html"><button class="buttonRegister">Register</button></a>
+                    <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Login.html"><button class="buttonLogin">Login</button></a>
+                </div>
+                  
+            </h1>
+    </div>
+    <footer class="footer">
+        <h4>@2024</h4>
+        <!-- <h4>Follow US On: </h4> -->
+    </footer>
 </body>
 </html>
