@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem .5rem;
+    box-shadow: 5px 5px 20px rgb(19, 19, 21);
+    background-color: rgb(33, 32, 32);
+  }
+  
+  
+  #navbarSupportedContent a{
+    color: #DCAE96;
+    font-size: 19px;
+  }
+  
+  #navbarSupportedContent a:hover{
+    border-bottom: 2px solid #DCAE96;
+    
+  }
+  
+  .dropdown-menu a{
+    color: rgb(33, 32, 32) !important;
+    background: #dad1d1; 
+  }
+  
+  #drop a{
+    color: black;
+  }
+  
+  #drop a:hover{
+    border-bottom: 2px solid black;
+  }
+  
+  section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+#AirConditioners{
+    background: #DCAE96;
+  }
+  
+#AirConditioners h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#AirConditioners h4{
+    font-size: 15px;
+}
+  
+  .card{
+    width: 300px;
+    height: 300px;
+    background: #DCAE96 !important;
+    box-shadow: 5px 5px 20px rgb(19, 19, 21);
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+  }

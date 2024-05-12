@@ -3,85 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./WelcomePage.css">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-        }
-        .heading{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: rgb(246, 248, 250);
-            width: 1220px;
-            height: 700px;
-            font-family: 'Times New Roman', Times, serif;
-            font-style: italic;
-            font-size: 25px;
-        }
-        
-        .buttonRegister{
-            position: relative;
-            border-radius: 12px;
-            border: 2px solid #04AA6D;
-            padding: 10px 25px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .buttonRegister:hover{
-            background-color: #a18d8d;
-            color: rgb(239, 227, 227);
-        }
-
-        .buttonLogin{
-            position: relative;
-            border-radius: 12px;
-            border: 2px solid #04AA6D;
-            padding: 10px 25px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .buttonLogin:hover{
-            background-color: #a18d8d;
-            color: rgb(239, 227, 227);
-        }
-
-
-
-    </style>
+    <title>Infinity Products</title>
+    <link rel="stylesheet" href="WelcomePage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <a class="active" href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/WelcomePage.html">Home</a>
-        <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Login.html">Login</a>
-        <a href=" ">Products</a>
-        <a href="">About Us</a>
-        <!-- <input type="text" name="searchbox" id="searchbox" placeholder="search"> -->
-        <input class="searchbox" type="text" name="searchbox" id="searchbox" placeholder="Search">
-    </div>
-    
-    <div class="heading">
-            <h1>
-                Leave Management System
-                <div >
-                    <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Register.html"><button class="buttonRegister">Register</button></a>
-                    <a href="file:///C:/Users/raks3556/Desktop/LeaveManagementSystem/Login.html"><button class="buttonLogin">Login</button></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+          </button>
+          <div class="container m-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/Infinity%20Products/Sign%20in.html">Sign In</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:5500/Infinity%20Products/Sign%20Up.html">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+      </nav>
+
+      <section id="home">
+        <h1>Infinity Products</h1>
+        <p>“Improve quality, you automatically improve productivity”</p>
+      </section>
+
+      <section id="product">
+        <div class="container m-5">
+            <h1 class="text-center my-5">Our Products</h1>
+            <div class="scroll-container">
+              <img src="Images/wall.jpg" width="300" height="300">
+              <img src="Images/home.jpg" width="300" height="300">
+              <img src="Images/watch.png" width="300" height="300">
+              <img src="Images/dress.png" width="300" height="300">
+              <img src="Images/shoe.jpg" width="300" height="300">
+              <img src="Images/backpack.png" width="300" height="300">
+              <img src="Images/clock.jpg" width="300" height="300">
+              <img src="Images/Galaxy.jpeg" width="300" height="300">
+              <img src="Images/brand.jpg" width="300" height="300">
+              <img src="Images/light.jpg" width="300" height="300">
+              <img src="Images/sticker.jpg" width="300" height="300">
+              <img src="Images/flower.jpg" width="300" height="300">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/ac.jpg" class="card-img-top" alt="airconditioner">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Air Conditioners</h5>
+                          <a href="http://127.0.0.1:5500/Infinity%20Products/AirConditioners.html" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
                 </div>
-                  
-            </h1>
-    </div>
-    <footer class="footer">
-        <h4>@2024</h4>
-        <!-- <h4>Follow US On: </h4> -->
-    </footer>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images//fridge.jpg" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Refrigerators</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/washingmachine.jpg" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Washing Machines</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/homedecor.jpg" class="card-img-top" alt="airconditioner">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Home Decorators</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/furnitures.jpg" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Furnitures</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/makeup.webp" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">MakeUp Products</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/cloths.webp" class="card-img-top" alt="airconditioner">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Womens Clothes</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/menscloths.webp" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Mens Clothes</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/health.jpg" class="card-img-top" alt="electronics">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Health Care</h5>
+                          <a href="#" class="btn btn-outline-success">See More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-lg-4 col-6">
+              <img src="Images/quality.png" class="card-img-top">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-12">
+              <h1>About Us</h1>
+              <p>
+                Infinity.com, doing business as Infinity Products, is an Indian multinational technology company, engaged in e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. It is considered one of the Big Five Indian technology companies; the other four are Alphabet (parent company of Google), Apple, Meta (parent company of Facebook), and Microsoft.
+                Infinity Products has a reputation as a disruptor of industries through technological innovation and aggressive reinvestment of profits into capital expenditures. As of 2024, it is the world's largest online retailer and marketplace, smart speaker provider, cloud computing service through AWS, live-streaming service through Twitch, and Internet company as measured by revenue and market share. In 2023, 
+                it surpassed Walmart as the world's largest retailer outside of China, driven in large part by its paid subscription plan, Amazon Prime, which has close to 200 million subscribers worldwide. It is the second-largest private employer in the United States.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="b-example-divider"></div>
+
+  <footer id="footer">
+      <p class="text-center"> Conditions of Use & Sale
+        Privacy Notice
+        Interest-Based Ads
+        </p>
+        <p class="text-center">
+          2024 Company, Inc
+        </p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+         function greet() 
+         {
+         var name = document.getElementById("name").value;
+         alert("Welcome to Infinity Products " + name + "!");
+      }
+    </script>
+    
 </body>
 </html>

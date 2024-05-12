@@ -1,81 +1,142 @@
-body{
-    background-image: url('./Images/RegistrationImage.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: fixed;
-    background-size: 100% 100%;
-    margin: 0;    
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+}
+
+#navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem .5rem;
+  box-shadow: 5px 5px 20px rgb(19, 19, 21);
+  background-color: rgb(33, 32, 32);
 }
 
 
-.navbar {
-    background-color: black;
-    
-    border: 2px solid;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
-    position: fixed;
-   
-  }
+#navbarSupportedContent a{
+  color: #DCAE96;
+  font-size: 19px;
+}
 
-  .navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    cursor: pointer;
-  }
+#navbarSupportedContent a:hover{
+  border-bottom: 2px solid #DCAE96;
   
-  .navbar a:hover {
-    background-color: #ffffff;
-    color: black;
-  }
+}
 
+.dropdown-menu a{
+  color: rgb(33, 32, 32) !important;
+  background: #dad1d1; 
+}
+
+#drop a{
+  color: black;
+}
+
+#drop a:hover{
+  border-bottom: 2px solid black;
+}
+
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home{
+  background: url(Images/RegistrationImage.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   
-  /* .navbar a.active {
-    background-color: white;
-    color: black;
-    border: 2px solid #04AA6D;
-  } */
-
-  .navbar .searchbox {
-            float: right;
-            position: relative;
-            border-radius: 12px;
-            border: 2px solid #04AA6D;
-            padding: 5px 20px;
-            text-align: left;
-            font-size: 16px;
-            margin: 4px 2px;
-            top: 10px;
-            cursor: pointer;
-  }
   
+}
+#home h1{
+  font-size: 60px;
+  color: #DCAE96;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  .footer{
-    background-color: black;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    float: left;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    
-  }
+#home p{
+  color: #DCAE96;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  .footer .center{
-    background-color: black;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    float: inline-start;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-  }
+#product{
+  background: #DCAE96;
+}
+
+#product h1{
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+  background: #DCAE96 !important;
+  box-shadow: 5px 5px 20px rgb(19, 19, 21);
+  border-radius: 20px !important;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 60px;
+}
+
+#signin{
+  background: #DCAE96;
+  justify-content: center;
+  align-items: center;
+}
+
+#signin h1{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about{
+  background: #c5a492;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+#footer{
+  color: #DCAE96;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: .4rem .4rem;
+  box-shadow: 5px 5px 20px rgb(19, 19, 21);
+  background-color: rgb(33, 32, 32);
+  
+}
+
+div.scroll-container {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scroll-container img {
+  padding: 5px;
+}

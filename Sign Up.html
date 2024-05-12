@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sign Up.css">
+</head>
+<body>
+    <form>
+    <h1>Create Account</h1>
+    <label>Your Name</label>
+    <input type="text" name="name" id="name" placeholder="Rakshana" required/>
+    <label for="">Phone Number</label>
+    <input type="tel" name="password" id="password" placeholder="7339263883" required/>        
+    <p class="agree">Agree to terms and conditions <input type="checkbox" required/></p> 
+    <button onclick="greet()">Submit</button>
+    <a href="http://127.0.0.1:5500/Infinity%20Products/Sign%20in.html">Login</a>
+    </form>
+    <script>
+        function greet() 
+        {
+        var name = document.getElementById("name").value;
+        alert("Welcome to Infinity Products " + name + "!");
+     }
+   </script>
+</body>
+</html>

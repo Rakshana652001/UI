@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #DCAE96;
+}
+
+form{
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .50);
+    border-radius: 30px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    opacity: .7;
+}
+
+label{
+    font-size: 18px;
+    margin-left: 10%;
+    opacity: .8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    opacity: .8;
+    cursor: pointer;
+}
+
+button{
+    width: 50%;
+    margin: 3% auto;
+    font-size: 15px;
+    opacity: .7;
+    background: #eeb69a;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 8px 32px 0 rgba(15, 17, 45, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+    opacity: .9;
+    cursor: pointer;
+}
