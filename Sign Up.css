@@ -13,21 +13,29 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #DCAE96;
+    background: url(Images/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 form{
-    width: 25rem;
-    height: 25rem;
+    width: fit-content;
+    height: fit-content;
     display: flex;
+    background: rgb(241, 224, 224);
     flex-direction: column;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .50);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .9);
     border-radius: 30px;
 }
 
 h1{
     font-size: 30px;
     text-align: center;
+    margin-top: 10%;
+    margin-bottom: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
     letter-spacing: 2px;
     margin-bottom: 5%;
@@ -37,7 +45,7 @@ h1{
 label{
     font-size: 18px;
     margin-left: 10%;
-    opacity: .8;
+    opacity: .9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 
 }
@@ -55,33 +63,32 @@ input{
 }
 
 button{
-    width: 50%;
+    width: fit-content;
     margin: 3% auto;
+    text-align: center;
     font-size: 15px;
-    opacity: .7;
-    background: #eeb69a;
+    opacity: .9;
+    color: aliceblue;
+    background: #3a3a99;
+    margin-left: 27%;
+    margin-top: 0%;
     padding: 10px 30px;
     border: none;
     outline: none;
-    box-shadow: 0 8px 32px 0 rgba(15, 17, 45, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(15, 17, 45, 0.6);
     border-radius: 30px;
     cursor: pointer;
 }
 
 a{
     font-size: 12px;
-    text-align: center;
+    margin-left: 40%;
     color: #000000;
     opacity: .9;
     cursor: pointer;
+    margin-bottom: 10%;
 }
 
-.agree{
-    font-size: 12px;
-    text-align: center;
-    color: #000000;
-    opacity: .7;
-    flex-direction:row-reverse;
+p{
+    margin-left: 10%;
 }
-
-  
