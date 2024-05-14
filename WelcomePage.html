@@ -13,19 +13,19 @@
           <div class="container m-2" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link active" href="#home" >Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#product">Products</a>
+                <a class="nav-link"  href="#product">Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link"  href="#contact">Contact</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="activelink">
                   Account
                 </a>
                 <ul class="dropdown-menu">
@@ -34,8 +34,9 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" id="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              
             </form>
           </div>
       </nav>
@@ -172,6 +173,16 @@
         </div>
       </section>
 
+      <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Any Questions or remarks? Just write us a message.</p>
+        <!-- <form>
+          <label>E-mail: <input type="email" placeholder="raksha@gmail.com" required/></label>
+          <label>Name: <input type="text" placeholder="Rakshana" required/></label>
+          <textarea id="input" cols="30" rows="10" placeholder="Message" required/></textarea>
+          <button onclick="message()">Submit</button>
+        </form> -->
+      </section>
 
   <footer id="footer">
       <p class="text-center"> Conditions of Use & Sale
@@ -182,13 +193,25 @@
           2024 Company, Inc
         </p>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-         function greet() 
-         {
-         var name = document.getElementById("name").value;
-         alert("Welcome to Infinity Products " + name + "!");
-      }
+    <script>
+         const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("navbar .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
     </script>
-    
 </body>
 </html>

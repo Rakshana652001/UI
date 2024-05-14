@@ -17,6 +17,11 @@
 }
 
 
+#search{
+  position: relative !important;
+  left: 10% !important;
+}
+
 #navbarSupportedContent a{
   color: #DCAE96;
   font-size: 19px;
@@ -29,7 +34,7 @@
 
 .dropdown-menu a{
   color: rgb(33, 32, 32) !important;
-  background: #dad1d1; 
+  background: #ffffff !important; 
 }
 
 #drop a{
@@ -74,6 +79,16 @@ section{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.active{
+  background: rgb(255, 0, 0) !important;
+  transition: all 300ms ease-in-out;
+  display:unset;
+}
+
+
+
+
+
 #product{
   background: #DCAE96;
 }
@@ -94,6 +109,21 @@ section{
   justify-content: center;
   align-items: center;
   margin: 20px 60px;
+}
+
+.btn-outline-dark{
+  background-color:rgba(238, 43, 43, 0)!important;
+  border-width: 2px !important;
+  border-color: rgb(75, 3, 3) !important;
+  color: rgb(0, 0, 0) !important;
+}
+.btn-outline-dark:hover{
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.74) !important;
+  background-color: #f2cbb6 !important;
+  transform: translate3d(0, 2px, 0) !important;
+} 
+.btn-outline-dark:focus{
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px !important;
 }
 
 #signin{
@@ -117,10 +147,72 @@ section{
 
 }
 
-.btn-outline-dark {
-  background-color: #e1bca8 !important;
-  border-color: rgb(0, 0, 0) !important;
-  border-width: 2px !important;
+
+#contact{
+    color: rgb(0, 0, 0);
+    background: #DCAE96;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#contact h1,p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10%;
+}
+
+
+#contact form{    
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    flex-direction: column;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    margin-bottom: 10%;
+    
+}
+
+#contact label{
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 8%;
+    opacity: .8;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#input{
+  margin: 5%;
+  height: 50%;
+  background: rgb(255, 255, 255);
+  color: black;
+  opacity: .8;
+  cursor: pointer;
+  position: relative;
+  left: 1%;
+}
+
+#contact button{
+    width: fit-content;
+    font-size: 15px;
+    opacity: .9;
+    color: aliceblue;
+    background: #DCAE96;
+    margin-left: 10%;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.74);
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    bottom: 18%;
 }
 
 

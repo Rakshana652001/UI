@@ -16,6 +16,10 @@
   background-color: rgb(33, 32, 32);
 }
 
+#search{
+  position: relative !important;
+  left: 10% !important;
+}
 
 #navbarSupportedContent a{
   color: #DCAE96;
